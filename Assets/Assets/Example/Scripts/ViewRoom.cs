@@ -4,7 +4,7 @@ using Fungus;
 
 public class ViewRoom : Room 
 {
-	public Room menuRoom;
+	public Room TheBridge;
 
 	public View mainView;
 	public View logoView;
@@ -14,8 +14,8 @@ public class ViewRoom : Room
 	{
 		SetView(mainView);
 
-		AddOption("Lets look at the logo", LookLogo);
-		AddOption("That's a nice toadstool over there", LookToadstool);
+		AddOption("Lets look at some blank background", LookLogo);
+		AddOption("Hows about some cut off letters?", LookToadstool);
 		AddOption("Back to menu", MoveToMenu);
 
 		Choose("Wanna move the camera?");
@@ -23,7 +23,7 @@ public class ViewRoom : Room
 
 	void MoveToMenu()
 	{
-		MoveToRoom(menuRoom);
+		MoveToRoom(TheBridge);
 	}
 
 	void LookLogo()
@@ -37,8 +37,8 @@ public class ViewRoom : Room
 	void LookToadstool()
 	{
 		FadeToView(toadstoolView, 2f);
-		Say("Now that is a pretty mushroom");
-		Say("Hey - let's go look at that logo");
+		Say ("Now them is some pretty letter tops");
+		Say("Hey - let's go look at the blank background!");
 		Call(LookLogo);
 	}
 }
