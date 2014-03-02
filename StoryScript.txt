@@ -1,0 +1,63 @@
+// HITCHIKERS GUIDE TO THE GALAXY GAME SCRIPT
+
+Narator: In the beginning the Universe was created.
+		 This has made a lot of people very angry and has been widely regarded as a bad move.
+		 Then a couple of million years happened and now we're here.
+		 After Marvin correcting the ships course with all the merriment we have come to expect from him, that being none at all, Ford engaged the Infinite Improbability Drive and crossed his fingers.
+		 Transmogrifing from a sea turtle to a bunch of grapes and finally settling on a collection of shaded voxels that some-what resembled their original form.
+
+		 (scene change)
+
+		 You hobble towards the wall with one blocky hand clutching the spherical collection of cubes that was once his head.
+		 what do you do?
+	 ---------------------------------------------------------------------------------------------
+	 a.	look down.
+	 b. look around.
+	 c. wait for normalization.
+
+		 a. You look down to see your body perfectly flat and your trusty towel hanging awkwardly from your other hand.
+		 	As you start to think your diet is paying off you quickly remember your current locale, hurtling through space with two madmen, the woman of your dreams and a morose robot.
+		 	(return to list with a removed)
+
+		 b. Looking around you spot Ford fiddling with the command console, Zaphod sprawled across the space sofa taking his hourly nap and Trillian peeking over Ford's shoulder, staring blankly with her big square eyes.
+		 	(return to list with b removed)
+
+		 c. you slump back against the wall and roll your head back.
+		 	a minute passes and nothing.
+
+	 ---------------------------------------------------------------------------------------------
+	 a. approach the console.
+	 b. keep waiting.
+
+
+		a.	As you near them, Ford and Trillian turn around wearing worried looks.
+		 	Well you think they are worried looks ; its hard to tell when the extend of someones facial expression is the deviation of two blocks making a smile or frown.
+
+				Ford: "We have some bad news"
+				Trillian: "The energy conduit in the normalizer is burnt out so we're stuck like this until we can replace it"
+
+				 "How could you possible know that?"
+
+				Ford: "Eddie told use, although he's a little slow as his quantum CPU seems to have been replaced by a Nintendo Entertainment System from earth"
+
+				 "Not even a SNES? This is terrible"
+
+				Ford: "The good news is that we're within hyper drive distance of Milliways"
+
+				 "Which is?"
+
+				Ford: "The restaurant at the end of the Universe!"
+
+				 "What about the energy conduit and Eddie being 8-Bit?"
+
+				Trillian: "We can discuss it over dinner"
+
+				 "Okay, take us in"
+
+
+
+		b.	You slump back, how much longer can it take?
+			4 more uneventful minutes pass.
+			(return to list with a removed)
+
+		(scene change)
