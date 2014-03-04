@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Dupe : MonoBehaviour 
 {
+	public float scalingUpperBound;
+	public float scalingLowerBound;
+
 	int counter;
 	Vector3 NewPos;
 	GameObject son;
@@ -32,11 +35,11 @@ public class Dupe : MonoBehaviour
 			GameObject.Instantiate (gameObject, NewPos, Quaternion.identity);
 			GameObject temp = GameObject.Find (gameObject.name + "(Clone)");
 			temp.name = "clone";
-			NewPos = new Vector3 (Random.Range (-10f, 10f), Random.Range (3f, 100f), 0f);
+			NewPos = new Vector3 (Random.Range (-10f, 10f), Random.Range (10f, 20f), 0f);
 			GameObject.Instantiate (gameObject, NewPos, Quaternion.identity);
 			temp = GameObject.Find (gameObject.name + "(Clone)");
 			temp.name = "clone";
-			float scaling = Random.Range(0.2f, 0.9f);
+			float scaling = Random.Range(scalingLowerBound, scalingUpperBound);
 			Vector2 scaler = new Vector2(scaling,scaling);
 			temp.transform.localScale = scaler;
 			//spriteRend = temp.GetComponent<SpriteRenderer>();
