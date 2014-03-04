@@ -1,14 +1,14 @@
 // HITCHIKERS GUIDE TO THE GALAXY GAME SCRIPT
 
-Narator: In the beginning the Universe was created.
+Narrator: In the beginning the Universe was created.
 		 This has made a lot of people very angry and has been widely regarded as a bad move.
 		 Then a couple of million years happened and now we're here.
 		 After Marvin correcting the ships course with all the merriment we have come to expect from him, that being none at all, Ford engaged the Infinite Improbability Drive and crossed his fingers.
-		 Transmogrifing from a sea turtle to a bunch of grapes and finally settling on a collection of shaded voxels that some-what resembled their original form.
+		 Transmogrifying from a sea turtle to a bunch of grapes and finally settling on a collection of shaded voxels that some-what resembled their original form.
 
 		 (scene change)
 
-		 You hobble towards the wall with one blocky hand clutching the spherical collection of cubes that was once his head.
+		 You hobble towards the wall with one blocky hand clutching the spherical collection of cubes that was once your head.
 		 what do you do?
 	 ---------------------------------------------------------------------------------------------
 	 a.	look down.
@@ -31,7 +31,7 @@ Narator: In the beginning the Universe was created.
 
 
 		a.	As you near them, Ford and Trillian turn around wearing worried looks.
-		 	Well you think they are worried looks ; its hard to tell when the extend of someones facial expression is the deviation of two blocks making a smile or frown.
+		 	Well you think they are worried looks ; its hard to tell when the extent of someone.s facial expression is the deviation of two blocks making a smile or frown.
 
 				Ford: "We have some bad news"
 				Trillian: "The energy conduit in the normalizer is burnt out so we're stuck like this until we can replace it"
