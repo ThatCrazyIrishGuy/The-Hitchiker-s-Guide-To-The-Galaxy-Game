@@ -5,7 +5,7 @@ public class Dupe : MonoBehaviour
 {
 	public float scalingUpperBound;
 	public float scalingLowerBound;
-
+	bool textView;
 	int counter;
 	Vector3 NewPos;
 	GameObject son;
@@ -14,11 +14,24 @@ public class Dupe : MonoBehaviour
 	void Start () 
 	{
 		counter = 0;
+		textView = false;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		if(!(GameObject.Find("Marv").collider2D.isTrigger && GameObject.Find("Art").collider2D.isTrigger && GameObject.Find("Ford").collider2D.isTrigger && GameObject.Find("Trillian").collider2D.isTrigger && GameObject.Find("Zarphod").collider2D.isTrigger))
+		{
+			textView = true;
+		}
+		if(textView)
+		{
+			if(Input.GetKeyDown(KeyCode.Return))
+			{
+				Application.LoadLevel("Story");
+			}
+		}
+
 
 	}
 	void OnTriggerEnter2D()
@@ -42,10 +55,6 @@ public class Dupe : MonoBehaviour
 			float scaling = Random.Range(scalingLowerBound, scalingUpperBound);
 			Vector2 scaler = new Vector2(scaling,scaling);
 			temp.transform.localScale = scaler;
-			//spriteRend = temp.GetComponent<SpriteRenderer>();
-			//Sprite[] sprites = Resources.LoadAll<Sprite>("Assets/Fungus/Sprites");
-			//Debug.Log(sprites.Length);
-			//spriteRend.sprite = sprites[(int)Random.Range(0, sprites.Length)];
 	
 		}
 

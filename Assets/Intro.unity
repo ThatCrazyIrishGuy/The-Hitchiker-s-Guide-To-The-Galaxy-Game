@@ -156,7 +156,7 @@ GameObject:
   - 58: {fileID: 146030550}
   m_Layer: 0
   m_Name: Trillian
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,7 +248,7 @@ GameObject:
   - 58: {fileID: 457315338}
   m_Layer: 0
   m_Name: Marv
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,7 +340,7 @@ GameObject:
   - 58: {fileID: 542500065}
   m_Layer: 0
   m_Name: Ford
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -455,7 +455,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 4a982f0fbafa5c7458c3f12799953854, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d10f42de64b8534e8c449e6452f2df8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &558866596
 Transform:
@@ -650,7 +650,7 @@ GameObject:
   - 58: {fileID: 2073497500}
   m_Layer: 0
   m_Name: Zarphod
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
