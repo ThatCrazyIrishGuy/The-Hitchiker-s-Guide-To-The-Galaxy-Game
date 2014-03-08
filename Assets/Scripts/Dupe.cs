@@ -20,9 +20,11 @@ public class Dupe : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if(!(GameObject.Find("Marv").collider2D.isTrigger && GameObject.Find("Art").collider2D.isTrigger && GameObject.Find("Ford").collider2D.isTrigger && GameObject.Find("Trillian").collider2D.isTrigger && GameObject.Find("Zarphod").collider2D.isTrigger))
+		if(!(GameObject.Find("Marv").collider2D.isTrigger || GameObject.Find("Art").collider2D.isTrigger || GameObject.Find("Ford").collider2D.isTrigger || GameObject.Find("Trillian").collider2D.isTrigger || GameObject.Find("Zarphod").collider2D.isTrigger))
 		{
 			textView = true;
+			Debug.Log("Finished");
+			//GameObject.Find("Text").guiText.text = "Don't Panic!!!/nPress Enter to Normalise";
 		}
 		if(textView)
 		{
