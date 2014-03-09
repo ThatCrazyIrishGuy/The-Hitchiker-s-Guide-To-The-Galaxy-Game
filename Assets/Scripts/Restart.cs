@@ -25,5 +25,10 @@ public class Restart : MonoBehaviour {
 			Application.LoadLevel("");
 			Debug.Log ("You lose");
 		}
+		if(Vector3.Distance(transform.position, GameObject.Find("Bell").transform.position) < 1)
+		{
+			Application.LoadLevel("");
+			Debug.Log("You win");
+		}
 	}
 }
