@@ -1869,6 +1869,7 @@ MonoBehaviour:
   LookZap: {fileID: 538414023}
   ViewDown: {fileID: 260687211}
   Main: {fileID: 1334284183}
+  Millys: {fileID: 497687351}
 --- !u!212 &600080771
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2499,7 +2500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visitCount: 0
-  Bridge: {fileID: 497687351}
+  Bridge: {fileID: 600080770}
 --- !u!212 &947641186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3530,7 +3531,7 @@ Transform:
   m_PrefabInternal: {fileID: 1714860608}
   m_GameObject: {fileID: 1334284182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.5900002, y: -2.70000005, z: 0}
+  m_LocalPosition: {x: 25.5900002, y: -.0399999991, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 485527701}
@@ -4237,7 +4238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e21cf853d714e3ab419e2573b64951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeRoom: {fileID: 1743835629}
+  activeRoom: {fileID: 947641185}
   activePageStyle: {fileID: 186064519}
   showLinks: 1
   continueText: Continue
@@ -4379,7 +4380,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0c38bb270b387e944be387c94490bcd9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.70000005
+      value: -.0399999991
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0c38bb270b387e944be387c94490bcd9, type: 2}
       propertyPath: m_LocalScale.x
@@ -5092,7 +5093,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 7a787023fc372694795b01919819ee37, type: 2}
       propertyPath: activeRoom
       value: 
-      objectReference: {fileID: 1743835629}
+      objectReference: {fileID: 947641185}
     - target: {fileID: 11400000, guid: 7a787023fc372694795b01919819ee37, type: 2}
       propertyPath: cameraZ
       value: -10

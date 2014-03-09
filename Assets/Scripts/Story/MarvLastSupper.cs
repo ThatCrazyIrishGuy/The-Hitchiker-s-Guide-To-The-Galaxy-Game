@@ -2,7 +2,7 @@
 using System.Collections;
 using Fungus;
 
-public class MarvinsLastSupper : Room
+public class MarvLastSupper : Room
 {
 	public Room BadEnding;
 	public Room GoodEnding;
@@ -26,6 +26,7 @@ public class MarvinsLastSupper : Room
 		Say ("With what, a malfunctioning space ship? that thing wouldn't cover a year");
 		Say ("You can say you're goodbyes now");
 		
+		//PlayerPrefs.SetInt("GotPOVGun",1);
 		int ending = PlayerPrefs.GetInt("GotPOVGun");
 		
 		if (ending == 1)
@@ -33,7 +34,8 @@ public class MarvinsLastSupper : Room
 			Title ("Ford");
 			Say ("Quick Zaph, pass Marvin the POV gun");
 			Title ("Zaphod");
-			Say ("Marvin, quick shoot him");
+			Say ("Marvin, quick shoot him...");
+			MoveToRoom(GoodEnding);
 		}
 		else
 		{
