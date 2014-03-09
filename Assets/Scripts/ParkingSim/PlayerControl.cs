@@ -14,10 +14,11 @@ public class PlayerControl : MonoBehaviour {
 	public float turnSpeed;
 
 	bool finished = false;
+	bool pauseInput = false;
 	
 	void  Update (){
 
-		if (finished)
+		if (pauseInput || finished)
 		{
 			return;
 		}
@@ -47,6 +48,12 @@ public class PlayerControl : MonoBehaviour {
 		//rigidbody2D.velocity.x = 0;
 		
 	}
+	
+//	public void ToggleInput()
+//	{
+//		Debug.Log("I was Called");
+//		pauseInput = !pauseInput;
+//	}
 
 	void Stop()
 	{	
@@ -54,5 +61,6 @@ public class PlayerControl : MonoBehaviour {
 		rigidbody2D.angularVelocity = 0;
 
 		finished = true;
+		Application.LoadLevel("StoryEnd");
 	}
 }
