@@ -26,7 +26,7 @@ public class Dupe : MonoBehaviour
 			//Debug.Log("Finished");
 			GameObject mess = GameObject.Find("Text");
 			mess.guiText.text = "Don't Panic!!!\nPress Enter to Normalise";
-			mess.guiText.color = Color.cyan;
+			mess.guiText.color = Color.magenta;
 
 		}
 		if(textView)
