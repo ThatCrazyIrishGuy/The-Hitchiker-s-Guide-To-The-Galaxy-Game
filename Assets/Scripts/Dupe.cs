@@ -23,8 +23,11 @@ public class Dupe : MonoBehaviour
 		if(!(GameObject.Find("Marv").collider2D.isTrigger || GameObject.Find("Art").collider2D.isTrigger || GameObject.Find("Ford").collider2D.isTrigger || GameObject.Find("Trillian").collider2D.isTrigger || GameObject.Find("Zarphod").collider2D.isTrigger))
 		{
 			textView = true;
-			Debug.Log("Finished");
-			//GameObject.Find("Text").guiText.text = "Don't Panic!!!/nPress Enter to Normalise";
+			//Debug.Log("Finished");
+			GameObject mess = GameObject.Find("Text");
+			mess.guiText.text = "Don't Panic!!!\nPress Enter to Normalise";
+			mess.guiText.color = Color.cyan;
+
 		}
 		if(textView)
 		{
