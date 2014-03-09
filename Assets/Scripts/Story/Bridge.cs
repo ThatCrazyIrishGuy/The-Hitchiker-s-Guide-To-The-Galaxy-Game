@@ -15,6 +15,8 @@ public class Bridge : Room
 	bool WaitedForNorm = false;
 	bool ConsoleNoticed = false;
 	
+	public Room Millys;
+	
 	void OnEnter() 
 	{	
 		Say ("You hobble towards the wall with one blocky hand clutching the spherical collection of cubes that was once your head.");
@@ -136,6 +138,8 @@ public class Bridge : Room
 
 				Title ("");
 				Say ("Okay, take us in");
+				
+				MoveToRoom(Millys);
 	}
 
 
