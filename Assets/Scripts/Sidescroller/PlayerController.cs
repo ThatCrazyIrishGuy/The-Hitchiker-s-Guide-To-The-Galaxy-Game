@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour {
 	public float speed = 8;
 	public float acceleration = 30;
 	public float jumpHeight = 12;
-	
+	public Vector3 dimShift = new Vector3(0,0,-1);
+
 	private float currentSpeed;
 	private float targetSpeed;
 	private Vector2 amountToMove;
@@ -37,7 +38,13 @@ public class PlayerController : MonoBehaviour {
 				amountToMove.y = jumpHeight;	
 			}
 		}
-		
+
+		//Change angle
+		if(Input.GetKeyDown(KeyCode.E))
+		{
+			GameObject cur = GameObject.Find("Cube");
+			cur.transform.Rotate(dimShift);
+		}
 		// Input
 		targetSpeed = Input.GetAxisRaw("Horizontal") * speed;
 		currentSpeed = IncrementTowards(currentSpeed, targetSpeed,acceleration);
