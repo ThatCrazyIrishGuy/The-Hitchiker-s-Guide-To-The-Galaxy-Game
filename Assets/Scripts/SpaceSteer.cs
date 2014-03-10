@@ -23,9 +23,19 @@ public class SpaceSteer : MonoBehaviour {
 		{
 			rigidbody2D.velocity += (Vector2)transform.up * speed * Time.deltaTime * -1f;
 		}
+//		else if(Input.GetKey(KeyCode.LeftArrow))
+//		{
+//			rigidbody2D.velocity += (Vector2)transform.right * speed * Time.deltaTime * -1f;	
+//		}
+//		else if(Input.GetKey(KeyCode.RightArrow))
+//		{
+//			rigidbody2D.velocity -= (Vector2)transform.right * speed * Time.deltaTime * -1f;	
+//
+//		}
 		else
 		{
 			Vector2 temp = rigidbody2D.velocity;
+			//temp =new Vector2(0,0);
 			temp.y = 0;
 			rigidbody2D.velocity = temp;
 		}
@@ -46,11 +56,13 @@ public class SpaceSteer : MonoBehaviour {
 		if(other.name == "Junk")
 		{
 			Application.LoadLevel("HeartofGoldLife");
+			PlayerPrefs.SetInt("BadDocking",1);
 		}
 
 		if(other.name == "Dock")
 		{
 			Application.LoadLevel("Story");
+			PlayerPrefs.SetInt("BadDocking",0);
 		}
 	}
 }

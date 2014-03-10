@@ -140,8 +140,14 @@ public class Bridge : Room
 
 				Title ("");
 				Say ("Okay, take us in");
-				
-				MoveToRoom(Millys);
+
+		AddOption ("Take Control", StartDocking);
+		Choose("");
+	}
+
+	void StartDocking()
+	{
+		Application.LoadLevel("Landing");
 	}
 
 
