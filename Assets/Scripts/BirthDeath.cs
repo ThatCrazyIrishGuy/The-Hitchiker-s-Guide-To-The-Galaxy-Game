@@ -1,36 +1,41 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class BirthDeath : MonoBehaviour {
-	public Vector2[] toDestroy;
+	public static List<Vector2> toCreate;
 	// Use this for initialization
 	void Start () 
 	{
-	
+		toCreate = new List<Vector2>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetKeyUp(KeyCode.R))
+		if(((int)Time.timeSinceLevelLoad % 3) == 2 )
 		{
+			for(int i = 0; i < toCreate.Count; i++)
+			{
+				Debug.Log(toCreate[i].ToString());
+				Collider2D[] tempOver = Physics2D.OverlapCircleAll(toCreate[i], 0.5f);
+				if(tempOver.Length < 1)
+				{
+					GameObject cell = GameObject.Find("Cell");
+					GameObject.Instantiate(cell, toCreate[i], Quaternion.identity);
+					GameObject newCell = GameObject.Find("Cell(Clone)");
+					newCell.name = "Cell";
+					newCell.tag = "Norm";
+				}
+			}
 			GameObject[]  temp = GameObject.FindGameObjectsWithTag("Destroy");
 			for(int i = temp.Length-1; i > -1; i--)
 			{
 				GameObject.Destroy(temp[i]);
 			}
-			temp = GameObject.FindGameObjectsWithTag("Newborn");
-			for(int i = temp.Length-1; i > -1; i--)
-			{
-				temp[i].collider2D.enabled = true;
-				Vector3 pos = temp[i].transform.position;
-				pos.z = 0;
-				temp[i].transform.position = pos;
-				temp[i].tag = "Norm";
-				temp[i].name = "Cell";
-			}
-
-
+			Debug.Log(toCreate.Count);
+			toCreate.Clear ();
 		}
+
 	}
 }
