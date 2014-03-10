@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BirthDeath : MonoBehaviour {
-	public GameObject[] toDestroy;
+public class BeginAndEnd : MonoBehaviour {
+
 	// Use this for initialization
-	void Start () 
-	{
+	void Start () {
 	
 	}
 	
