@@ -16,21 +16,28 @@ public class Junk : MonoBehaviour {
 		Debug.Log (transform.position.x);
 		if(gameObject.name == "Junk")
 		{
-			if(transform.position.x > Heart.transform.position.x)
+			if(transform.position.x > Heart.transform.position.x )
 			{
-				int shipX = (int)Heart.transform.position.x;
-				float xtemp = (float)Random.Range(shipX-20, shipX-10);
-				float ytemp = (float)Random.Range(-7, 7);
-				Vector3 temp = new Vector3(xtemp,ytemp);
-				GameObject.Instantiate(gameObject,temp,Quaternion.identity);
-				GameObject cloner = GameObject.Find("Junk(Clone)");
-				cloner.name = "Junk";
-				GameObject.Instantiate(gameObject,temp,Quaternion.identity);
-				cloner = GameObject.Find("Junk(Clone)");
-				cloner.name = "Junk";
+				if(transform.position.x > -60)
+				{
+					int shipX = (int)Heart.transform.position.x;
+					float xtemp = (float)Random.Range(shipX-20, shipX-10);
+					float ytemp = (float)Random.Range(-7, 7);
+					Vector3 temp = new Vector3(xtemp,ytemp);
+					GameObject.Instantiate(gameObject,temp,Quaternion.identity);
+					GameObject cloner = GameObject.Find("Junk(Clone)");
+					cloner.name = "Junk";
+					GameObject.Instantiate(gameObject,temp,Quaternion.identity);
+					cloner = GameObject.Find("Junk(Clone)");
+					cloner.name = "Junk";
+				}
 				gameObject.name = "dis";
 
 			}
+		}
+		else if(transform.position.x > Heart.transform.position.x + 7)
+		{
+			GameObject.Destroy(gameObject);
 		}
 	}
 }
