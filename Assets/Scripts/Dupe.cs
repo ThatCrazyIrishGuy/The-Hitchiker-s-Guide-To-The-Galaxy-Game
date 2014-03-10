@@ -33,7 +33,7 @@ public class Dupe : MonoBehaviour
 		{
 			if(Input.GetKeyDown(KeyCode.Return))
 			{
-				Application.LoadLevel("Story");
+				Application.LoadLevel("Begin");
 			}
 		}
 

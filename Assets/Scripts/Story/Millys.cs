@@ -7,10 +7,21 @@ public class Millys : Room
 	public Room MarvMinding;
 	
 	void OnEnter() 
-	{	 
-		Say ("I think I may be slightly concused from docking");
-		Title ("Ford");
-		Say ("You try docking that ship with a duckhunt gun and no fingers");
+	{	if (PlayerPrefs.GetInt("BadDocking") == 0)
+		{
+			Say ("I think I may be slightly concused from docking");
+			Title ("Ford");
+			Say ("You try docking that ship with a duckhunt gun and no fingers");
+			Say ("At least i didn't hit anything");
+		}
+		else
+		{
+			Say ("What the hell just happened?");
+			Title ("Ford");
+			Say (" That collision hit the ship's IID");
+			Say ("If the energy conduit wasn't burned out that could have been the end");
+		}
+
 		Say ("We really need to fix Eddie");
 		Title ("Eddie");
 		Say ("I am Error");
