@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   tags:
-  - Ford
+  - Newborn
+  - Destroy
+  - Norm
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

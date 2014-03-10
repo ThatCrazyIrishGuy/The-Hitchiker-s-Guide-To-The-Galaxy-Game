@@ -86,7 +86,7 @@ GameObject:
   - 114: {fileID: 39157555}
   - 58: {fileID: 39157558}
   m_Layer: 0
-  m_Name: CellC
+  m_Name: CellB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,7 +160,7 @@ GameObject:
   - 114: {fileID: 374780068}
   - 58: {fileID: 374780067}
   m_Layer: 0
-  m_Name: CellE
+  m_Name: Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,7 +234,7 @@ GameObject:
   - 114: {fileID: 483416635}
   - 58: {fileID: 483416638}
   m_Layer: 0
-  m_Name: CellA
+  m_Name: Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - 114: {fileID: 1670164730}
   - 58: {fileID: 1670164733}
   m_Layer: 0
-  m_Name: CellB
+  m_Name: Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -460,7 +460,7 @@ GameObject:
   - 114: {fileID: 1836034806}
   - 58: {fileID: 1836034805}
   m_Layer: 0
-  m_Name: CellD
+  m_Name: Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
