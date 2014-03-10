@@ -25,15 +25,16 @@ public class Dupe : MonoBehaviour
 			textView = true;
 			//Debug.Log("Finished");
 			GameObject mess = GameObject.Find("Text");
-			mess.guiText.text = "Don't Panic!!!\nPress Enter to Normalise";
+			mess.guiText.text = "Don't Panic!!!\nTouch to Normalise";
 			mess.guiText.color = Color.red;
 
 		}
 		if(textView)
 		{
-			if(Input.GetKeyDown(KeyCode.Return))
-			{
-				Application.LoadLevel("Begin");
+			for (var i = 0; i < Input.touchCount; ++i) {
+				if (Input.GetTouch(i).phase == TouchPhase.Began) {
+					Application.LoadLevel("Begin");
+				}
 			}
 		}
 

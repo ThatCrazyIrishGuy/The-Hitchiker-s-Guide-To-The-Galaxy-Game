@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Player Handling
 	public float gravity = 20;
-	public float speed = 8;
+	public float speed = 2;
 	public float acceleration = 30;
 	public float jumpHeight = 12;
 	public Vector3 dimShift = new Vector3(0,0,-1);
@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour {
 	private float currentSpeed;
 	private float targetSpeed;
 	private Vector2 amountToMove;
+	
+	private bool jumped= false;
+	private bool disableInput = false;
+	private float momentum = 0f;
 	
 	private PlayerPhysics playerPhysics;
 	
@@ -32,21 +36,46 @@ public class PlayerController : MonoBehaviour {
 		// If player is touching the ground
 		if (playerPhysics.grounded) {
 			amountToMove.y = 0;
+			jumped = false;
+			disableInput = false;
+		}
+		else
+		{
+			disableInput = true;
+		}
 			
-			// Jump
-			if (Input.GetButtonDown("Jump")) {
-				amountToMove.y = jumpHeight;	
+		// Jump
+		for (var i = 0; i < Input.touchCount; ++i) {
+			if (Input.GetTouch(i).phase == TouchPhase.Began && !jumped) {
+				amountToMove.y = jumpHeight;
+				jumped= true;
 			}
 		}
 
 		//Change angle
-		if(Input.GetKeyDown(KeyCode.E))
+//		if(Input.GetKeyDown(KeyCode.E))
+//		{
+//			GameObject cur = GameObject.Find("Cube");
+//			cur.transform.Rotate(dimShift);
+//		}
+
+		if (disableInput)
 		{
-			GameObject cur = GameObject.Find("Cube");
-			cur.transform.Rotate(dimShift);
+			targetSpeed = momentum;	
 		}
-		// Input
-		targetSpeed = Input.GetAxisRaw("Horizontal") * speed;
+		else if (Input.acceleration.x > 0.05)
+		{
+			targetSpeed = Input.acceleration.z * speed;
+		}
+		else if(Input.acceleration.x < -0.05)
+		{
+			targetSpeed = (-Input.acceleration.z) * speed;
+		}
+		else
+		{
+			targetSpeed = 0;
+		}
+		momentum = targetSpeed;
 		currentSpeed = IncrementTowards(currentSpeed, targetSpeed,acceleration);
 		
 		// Set amount to move

@@ -11,7 +11,7 @@ public class PlayerControl : MonoBehaviour {
 	public KeyCode turnRight;
 	
 	public float acceleration;
-	public float turnSpeed;
+	public float turnSpeed = 0.2f;
 
 	bool finished = false;
 	bool pauseInput = false;
@@ -22,30 +22,25 @@ public class PlayerControl : MonoBehaviour {
 		{
 			return;
 		}
-		if (Input.GetKey(forward))
+		
+		if (Input.GetTouch(0).position.x > Screen.width /2)
 		{
 			rigidbody2D.AddForce(transform.up * acceleration);
 		}
-		else if (Input.GetKey(reverse))
+		else if (Input.GetTouch(0).position.x < Screen.width /2)
 		{
 			rigidbody2D.AddForce(transform.up * -acceleration);
 		}
-		else
-		{
-			//rigidbody2D.velocity.y = 0;
-		}
 		
-		if (Input.GetKey(turnLeft))
+		if (Input.acceleration.x > 0)
 		{
 			rigidbody2D.AddTorque(turnSpeed);
 		}
 		
-		if (Input.GetKey(turnRight))
+		if (Input.acceleration.x < 0)
 		{
 			rigidbody2D.AddTorque(-turnSpeed);
 		}
-		
-		//rigidbody2D.velocity.x = 0;
 		
 	}
 	
