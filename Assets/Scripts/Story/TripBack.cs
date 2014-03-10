@@ -8,16 +8,16 @@ public class TripBack : Room
 	
 	void OnEnter() 
 	{	
-		Title ("Trillian");
+		Title ("");
 		Say ("Finally we're on the way back");
-		Say ("I could eat a horse");
+		Say ("I could eat a horse and its foal");
 		Title ("Ford");
 		Say ("You're in luck");
-		Say ("Millys does excellent deep fried horse");
+		Say ("Millies does excellent deep fried horse");
 		Title ("");
 		Say ("...");
 		Title ("Trillian");
-		Say ("Forget you're stomachs guys...");
+		Say ("Forget your stomachs guys...");
 		Say ("WE FORGOT ABOUT MARVIN!");
 		Title ("Ford");
 		Say ("Yeah, its been an hour or two");
@@ -33,8 +33,8 @@ public class TripBack : Room
 		{
 			Say("I'm only halve the man i once was...");
 			Title ("Ford");
-			Say ("We're already going to have to deal with one sulking machine");
-			Say ("Cheer up Zap, you'll be able to drowned your depression in alcohol once we're back at Millys");
+			Say ("We're already going to have to deal with one sulking machine...");
+			Say ("Cheer up Zap, you'll be able to drowned your depression in alcohol once we're back at Millies");
 			Title ("Zaphod");
 			Say ("You always know the right thing to say Ford");
 		}
@@ -51,9 +51,9 @@ public class TripBack : Room
 			Say("I don't have the POV gun anymore either");
 			Title ("Ford");
 			Say ("Marv used to enjoy that");
-			Say ("You can tell him why its gone");
+			Say ("You can tell him why it's gone");
 			Title ("Zaphod");
-			Say ("I have a feeling that i won't enjoy this...");
+			Say ("I have a feeling that I won't enjoy this...");
 		}
 		
 		Title ("");

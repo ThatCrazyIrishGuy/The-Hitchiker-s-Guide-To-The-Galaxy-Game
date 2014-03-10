@@ -10,7 +10,7 @@ public class MarvLastSupper : Room
 	void OnEnter() 
 	{	
 		Title ("Max");
-		Say ("Marvin has cause so much in damages here that he almost totally bankrupt us");
+		Say ("Marvin has cost us so much in damages here that he almost totally bankrupt us");
 		Title ("");
 		Say ("...");
 		Title ("Max");
@@ -18,13 +18,13 @@ public class MarvLastSupper : Room
 		Title ("Trillian");
 		Say ("You can't do that, he is ours");
 		Title ("Max");
-		Say ("He has been in our custody so long now he is our property");
+		Say ("He has been in our custody so long now he is our property now");
 		Say ("I'm sorry but its the only way we can pay the damages he has incured");
 		Title ("Zaphod");
 		Say ("We'll pay the damages");
 		Title ("Max");
 		Say ("With what, a malfunctioning space ship? that thing wouldn't cover a year");
-		Say ("You can say you're goodbyes now");
+		Say ("You can say your goodbyes now");
 		
 		//PlayerPrefs.SetInt("GotPOVGun",1);
 		int ending = PlayerPrefs.GetInt("GotPOVGun");
@@ -34,7 +34,7 @@ public class MarvLastSupper : Room
 			Title ("Ford");
 			Say ("Quick Zaph, pass Marvin the POV gun");
 			Title ("Zaphod");
-			Say ("Marvin, quick shoot him...");
+			Say ("Marvin, quick, shoot him...");
 			MoveToRoom(GoodEnding);
 		}
 		else
@@ -46,7 +46,7 @@ public class MarvLastSupper : Room
 			Title ("Trillian");
 			Say ("We'll miss you *sob*");
 			Title ("Marvin");
-			Say ("It's Okay, what can be worse than 5376000 million years of parking cars...");
+			Say ("It's okay, what can be worse than 5376000 million years of parking cars...");
 			MoveToRoom(BadEnding);
 		}
 	}

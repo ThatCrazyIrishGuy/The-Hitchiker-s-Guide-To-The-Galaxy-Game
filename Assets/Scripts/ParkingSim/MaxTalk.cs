@@ -27,7 +27,7 @@ public class MaxTalk : Room
 	{
 		Title ("Max");
 		
-		Say ("If you want to keep staying here, you have to pull you're weight");
+		Say ("If you want to keep staying here, you have to pull your weight");
 		Say ("We needed a robot to do this because we have noticed some bugs in our holographic simulation");
 		Say ("If you see anything strange, turn back");
 		Marv.GetComponent<MarvTalk>().ThirdReply();

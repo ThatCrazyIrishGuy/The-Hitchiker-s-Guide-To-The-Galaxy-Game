@@ -22,13 +22,17 @@ public class Restart : MonoBehaviour {
 		}
 		if(fallCount > 2)
 		{
-			Application.LoadLevel("");
-			Debug.Log ("You lose");
+			PlayerPrefs.SetInt("GotHead",0);
+			PlayerPrefs.SetInt("GotPOVGun",0);
+			Application.LoadLevel("StoryMid");
+			//Debug.Log ("You lose");
 		}
 		if(Vector3.Distance(transform.position, GameObject.Find("Bell").transform.position) < 1)
 		{
-			Application.LoadLevel("");
-			Debug.Log("You win");
+			PlayerPrefs.SetInt("GotHead",1);
+			PlayerPrefs.SetInt("GotPOVGun",1);
+			Application.LoadLevel("StoryMid");
+			//Debug.Log("You win");
 		}
 	}
 }

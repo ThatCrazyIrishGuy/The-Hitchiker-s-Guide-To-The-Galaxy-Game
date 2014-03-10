@@ -21,13 +21,30 @@ public class BackAtMillys : Room
 		Say ("It was at most two and a half hours");
 		Title ("Max");
 		Say ("Oh no, what he is saying is correct");
-		Say ("Marven has been a lodger here since as long as anyone can remember");
+		Say ("Marvin has been a lodger here since as long as anyone can remember");
 		Title ("Ford");
 		Say ("The spent power conduit must have caused the IID to malfunction and send us forward in time");
-		Say ("But Marven, what have you been doing for all this time");
-		Title ("Marven");
+		Say ("But Marvin, what have you been doing for all this time");
+		Title ("Marvin");
 		Say ("They gave me a job parking hover cars...");
-		Application.LoadLevel("lvl1");
+		AddOption ("Reminisce", StartParkingSim);
+		AddOption ("Repress", StartParkingSimBegrudgingly);
+		Choose("Make your choice");
 		//MoveToRoom(HummaChallenge);
+	}
+	
+	void StartParkingSim()
+	{
+		Application.LoadLevel("lvl1");	
+	}
+	
+	void StartParkingSimBegrudgingly()
+	{
+		Title("Narrator");
+		Say ("Marvin did not enjoy looking back on this bleak part of his history");
+		Say ("But he was required to do so to progress the story");
+		Title ("");
+		AddOption ("Think Back...", StartParkingSim);
+		Choose("");
 	}
 }

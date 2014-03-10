@@ -10,8 +10,8 @@ public class Credits : Room
 	public View Snoz2;
 	
 	void OnEnter() 
-	{	
-		Wait(3);
+	{	  
+		Wait(3); 
 		PanToView (InspiredBy,2f);
 		Wait(3);
 		PanToView (Bryan,2f);
@@ -20,6 +20,13 @@ public class Credits : Room
 		Wait(2);
 		PanToView (Snoz2,2f);
 		Wait(2);
+		AddOption ("Exit", EndGame);
+		Choose("");
+
+	}
+	
+	void EndGame()
+	{
 		Application.Quit();
 	}
 	

@@ -9,7 +9,7 @@ public class GoingBack : Room
 	void OnEnter() 
 	{	
 		Say ("I don't know why they even hired a Narator if they wern't going to...");
-		Say ("After a undocking that could rival a Pan Galactic Gargle Blaster, Ford engaged the IID again and eveyone held tight...");
+		Say ("After an undocking that could rival a Pan Galactic Gargle Blaster, Ford engaged the IID again and eveyone held tight...");
 		MoveToRoom(IIDStrangness);
 	}
 	

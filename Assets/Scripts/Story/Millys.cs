@@ -7,7 +7,7 @@ public class Millys : Room
 	public Room MarvMinding;
 	
 	void OnEnter() 
-	{	
+	{	 
 		Say ("I think I may be slightly concused from docking");
 		Title ("Ford");
 		Say ("You try docking that ship with a duckhunt gun and no fingers");
@@ -23,7 +23,7 @@ public class Millys : Room
 		Say ("It's right there!");
 		Say ("Just turn your head");
 		Title ("Zaphod");
-		Say("I'll just use my other.....Um guys");
+		Say("I'll just use my other.....ummm guys");
 		Title ("");
 		Say ("What now?");
 		Title ("Zaphod");

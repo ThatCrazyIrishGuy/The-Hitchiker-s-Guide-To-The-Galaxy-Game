@@ -71,7 +71,7 @@ public class Bridge : Room
 		PanToView (LookFord,2f);
 		Wait(1);
 		PanToView (Main,2f);
-		Say ("Zaphod sprawled across the space sofa taking his hourly nap");
+		Say ("Zaphod sprawled across the floor taking his hourly nap");
 		PanToView(LookZap,2f);
 		Wait(1);
 		PanToView (Main,2f);
@@ -97,12 +97,14 @@ public class Bridge : Room
 	{
 		Say ("You move into the fetal position, how much longer can it take?");
 		Say	("4 more uneventful minutes pass.");
+		PrintChoices();
 	}
 	
 	void ApproachConsole()
 	{
 		Say ("As you near them, Ford and Trillian turn around wearing worried looks.");
-		Say	("Well you think they are worried looks ; it's hard to tell when the extent of someone's facial expression is the deviation of two blocks making a smile or frown.");
+		Say	("Well you think they are worried looks");
+		Say ("It's hard to tell when the extent of someone's facial expression is the deviation of two blocks making a smile or frown.");
 
 				Title ("Ford");
 				Say ("We have some bad news");

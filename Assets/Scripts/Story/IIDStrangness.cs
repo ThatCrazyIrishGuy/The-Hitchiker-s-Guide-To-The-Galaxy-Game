@@ -9,9 +9,9 @@ public class IIDStrangness : Room
 	void OnEnter() 
 	{	
 		Title ("Ford");
-		Say ("Ouch, its never been that rough before but i think it worked!");
+		Say ("Ouch, it's never been that rough before, but I think it's worked!");
 		Title ("");
-		Say ("I am so sick of being knocked around this ship, when get we get it properly repaired?");
+		Say ("I am so sick of being knocked around this ship, when can we get it properly repaired?");
 		Title ("Zaphod");
 		Say ("After we get my head back and eat, i know a guy");
 		Title ("Trillian");
