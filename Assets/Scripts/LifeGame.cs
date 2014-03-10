@@ -15,6 +15,10 @@ public class LifeGame : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if(Time.timeSinceLevelLoad > 20)
+		{
+			Application.LoadLevel("Story");
+		}
 		if(((int)Time.timeSinceLevelLoad % 3) == 0)
 		{
 
