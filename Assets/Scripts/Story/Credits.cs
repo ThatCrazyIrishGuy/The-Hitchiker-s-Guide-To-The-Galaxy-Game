@@ -10,7 +10,8 @@ public class Credits : Room
 	public View Snoz2;
 	
 	void OnEnter() 
-	{	  
+	{
+		audio.Play();
 		Wait(3); 
 		PanToView (InspiredBy,2f);
 		Wait(3);
@@ -27,6 +28,7 @@ public class Credits : Room
 	
 	void EndGame()
 	{
+		audio.Stop();
 		Application.Quit();
 	}
 	
