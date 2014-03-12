@@ -69,10 +69,18 @@ public class SpaceSteer : MonoBehaviour {
 	{
 		Debug.Log ("col");
 		if(other.name == "Cube")
-		{
-			Vector2 temp =  rigidbody2D.velocity;
-			temp.y = temp.y *-1f;
-			rigidbody2D.velocity = temp; 
+		{	
+			Vector3 temp = transform.position;
+			if(temp.y > 0)
+			{
+				temp.y = -6f;
+			}
+			else
+			{
+				temp.y = 6f;
+			}
+			transform.position = temp;
+
 
 		}
 
