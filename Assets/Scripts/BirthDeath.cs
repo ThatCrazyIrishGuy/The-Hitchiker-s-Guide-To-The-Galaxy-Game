@@ -13,7 +13,7 @@ public class BirthDeath : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if(((int)Time.timeSinceLevelLoad % 3) == 2 )
+		if(((int)Time.timeSinceLevelLoad % 2) == 1 )
 		{
 			for(int i = 0; i < toCreate.Count; i++)
 			{

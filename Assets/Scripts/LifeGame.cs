@@ -19,7 +19,7 @@ public class LifeGame : MonoBehaviour {
 		{
 			Application.LoadLevel("Story");
 		}
-		if(((int)Time.timeSinceLevelLoad % 3) == 0)
+		if(((int)Time.timeSinceLevelLoad % 2) == 0)
 		{
 
 
