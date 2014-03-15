@@ -9,7 +9,7 @@ public class HummaChallenge : Room
 	int GotPOVGun = 0;
 	
 	void OnEnter() 
-	{	
+	{
 		Title ("Humma");
 		Say ("Zaphod Beeblebrox?");
 		Title ("Zaphod");
@@ -30,7 +30,7 @@ public class HummaChallenge : Room
 		Choose("Make your choice");
 		//MoveToRoom(HummaChallenge);
 	}
-	
+
 	void TakeChallenge()
 	{
 		Title ("Zaphod");
