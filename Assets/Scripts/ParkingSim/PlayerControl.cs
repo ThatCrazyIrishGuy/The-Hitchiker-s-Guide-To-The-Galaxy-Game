@@ -31,12 +31,12 @@ public class PlayerControl : MonoBehaviour {
 			rigidbody2D.AddForce(transform.up * -acceleration);
 		}
 		
-		if (Input.acceleration.x > 0)
+		if (Input.acceleration.y > 0)
 		{
 			rigidbody2D.AddTorque(turnSpeed);
 		}
 		
-		if (Input.acceleration.x < 0)
+		if (Input.acceleration.y < 0)
 		{
 			rigidbody2D.AddTorque(-turnSpeed);
 		}
