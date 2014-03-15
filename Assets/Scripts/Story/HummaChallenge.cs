@@ -25,7 +25,7 @@ public class HummaChallenge : Room
 		Say ("So i propose a challenge...");
 		Say ("If you can scale the church from the inside and ring the bell you can take your head and keep the point of view gun...");
 		Say ("But if you fail, i keep both");
-		AddOption ("Accpet Challenge", TakeChallenge);
+		AddOption ("Accept Challenge", TakeChallenge);
 		AddOption ("Reject Challenge", PassChallenge);
 		Choose("Make your choice");
 		//MoveToRoom(HummaChallenge);
@@ -56,7 +56,7 @@ public class HummaChallenge : Room
 	{
 		Title ("Zaphod");
 		Say ("I can't take that risk");
-		Say ("Besides I'm sick of getting shot with this stuiped gun anyway");
+		Say ("Besides I'm sick of getting shot with this stupid gun anyway");
 		Title ("");
 		Say ("Thank god...");
 		Title ("Humma");
