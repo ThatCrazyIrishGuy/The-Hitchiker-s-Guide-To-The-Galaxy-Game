@@ -15,7 +15,7 @@ public class Bridge : Room
 	bool WaitedForNorm = false;
 	bool ConsoleNoticed = false;
 	
-	public Room Millys;
+	public Room Controls;
 	
 	void OnEnter() 
 	{	
@@ -141,13 +141,12 @@ public class Bridge : Room
 				Title ("");
 				Say ("Okay, take us in");
 
-		AddOption ("Take Control", StartDocking);
-		Choose("");
+		StartDocking();
 	}
 
 	void StartDocking()
 	{
-		Application.LoadLevel("Landing");
+		MoveToRoom(Controls);
 	}
 
 

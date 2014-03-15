@@ -65,11 +65,11 @@ public class PlayerController : MonoBehaviour {
 		}
 		else if (Input.acceleration.x > 0.05)
 		{
-			targetSpeed = Input.acceleration.z * speed;
+			targetSpeed = Input.acceleration.y * speed;
 		}
 		else if(Input.acceleration.x < -0.05)
 		{
-			targetSpeed = (-Input.acceleration.z) * speed;
+			targetSpeed = (-Input.acceleration.y) * speed;
 		}
 		else
 		{

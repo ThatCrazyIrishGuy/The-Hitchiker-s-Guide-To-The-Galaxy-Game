@@ -17,7 +17,7 @@ public class IIDStrangness : Room
 		Title ("Trillian");
 		Say ("Can we go ahead and dock so we can get this over with");
 		Title ("Zaphod");
-		Say ("Like I havn't heard that one before...");
+		Say ("Like I haven't heard that one before...");
 		Title ("Ford");
 		Say("Okay, let me just hook Eddie back up and we'll be down faster than Marvin's psyche");
 		MoveToRoom(Temple);

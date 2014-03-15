@@ -4,7 +4,7 @@ using Fungus;
 
 public class HummaChallenge : Room
 {
-	//public Room HummaChallenge;
+	public Room Controls;
 	int GotHead = 0;
 	int GotPOVGun = 0;
 	
@@ -42,14 +42,13 @@ public class HummaChallenge : Room
 		Say ("You have three chances to reach the top");
 		Say ("If you fail 3 times the challenge is over and you leave empty handed");
 		Say ("Let the challenge commence!");
-		AddOption ("Start Challenge", TakeChallenge);
+		AddOption ("Start Challenge", LoadChallenge);
 		Choose("");
-		LoadChallenge();
 	}
 	
 	void LoadChallenge()
 	{
-		Application.LoadLevel("Sidescroller");
+		MoveToRoom(Controls);
 	}
 	
 	void PassChallenge()
