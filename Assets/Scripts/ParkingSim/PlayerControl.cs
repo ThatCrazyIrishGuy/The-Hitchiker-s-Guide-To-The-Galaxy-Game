@@ -14,7 +14,7 @@ public class PlayerControl : MonoBehaviour {
 	public float turnSpeed = 0.2f;
 
 	bool finished = false;
-	bool pauseInput = false;
+	bool pauseInput = true;
 	
 	void  Update (){
 
@@ -22,8 +22,7 @@ public class PlayerControl : MonoBehaviour {
 		{
 			return;
 		}
-		
-		if (Input.GetTouch(0).position.x > Screen.width /2)
+		else if (Input.GetTouch(0).position.x > Screen.width /2)
 		{
 			rigidbody2D.AddForce(transform.up * acceleration);
 		}
@@ -44,11 +43,11 @@ public class PlayerControl : MonoBehaviour {
 		
 	}
 	
-//	public void ToggleInput()
-//	{
-//		Debug.Log("I was Called");
-//		pauseInput = !pauseInput;
-//	}
+	public void ToggleInput()
+	{
+		Debug.Log("I was Called");
+		pauseInput = !pauseInput;
+	}
 
 	void Stop()
 	{	

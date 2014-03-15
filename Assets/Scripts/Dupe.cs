@@ -5,7 +5,6 @@ public class Dupe : MonoBehaviour
 {
 	public float scalingUpperBound;
 	public float scalingLowerBound;
-	bool textView;
 	int counter;
 	Vector3 NewPos;
 	GameObject son;
@@ -14,7 +13,6 @@ public class Dupe : MonoBehaviour
 	void Start () 
 	{
 		counter = 0;
-		textView = false;
 	}
 	
 	// Update is called once per frame
@@ -22,17 +20,12 @@ public class Dupe : MonoBehaviour
 	{
 		if(!(GameObject.Find("Marv").collider2D.isTrigger || GameObject.Find("Art").collider2D.isTrigger || GameObject.Find("Ford").collider2D.isTrigger || GameObject.Find("Trillian").collider2D.isTrigger || GameObject.Find("Zarphod").collider2D.isTrigger))
 		{
-			textView = true;
-			//Debug.Log("Finished");
 			GameObject mess = GameObject.Find("Text");
 			mess.guiText.text = "Don't Panic!!!\nTouch to Normalise";
 			mess.guiText.color = Color.red;
-
-		}
-		if(textView)
-		{
 			for (var i = 0; i < Input.touchCount; ++i) {
 				if (Input.GetTouch(i).phase == TouchPhase.Began) {
+					mess.guiText.text = "Please Wait...";
 					Application.LoadLevel("Begin");
 				}
 			}

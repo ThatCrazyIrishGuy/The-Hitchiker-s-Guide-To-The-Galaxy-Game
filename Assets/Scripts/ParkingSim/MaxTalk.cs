@@ -39,21 +39,14 @@ public class MaxTalk : Room
 		
 		Say ("Okay, lets get started");
 		Say ("Go ahead and find the parking spot for that car");
-		//EnableCarControl();
+		AddOption ("Start", EnableCarControl);
+		Choose("");
 	}
 	
-//	void EnableCarControl()
-//	{
-//		Wait (5);
-//		Debug.Log ("Max Fun called");
-//		car.GetComponent<PlayerControl>().ToggleInput();
-//	}
-	
-//	public void Finished()
-//	{
-//		Title ("Max");
-//		
-//		Say ("Okay, that went.....we'll I'm just going to pretend i didn't see anything");
-//		Say ("You're on your own now");
-//	}
+	void EnableCarControl()
+	{
+		Wait (5);
+		Debug.Log ("Max Fun called");
+		car.GetComponent<PlayerControl>().ToggleInput();
+	}
 }
